@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 public class Image extends ListenerAdapter {
-    private static final String API_KEY = "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";
+    private static final String API_KEY = System.getenv("OPENAI_API_KEY");
     private static final String API_URL = "https://api.openai.com/v1/images/generations";
 
     public void onSlashCommandInteraction(SlashCommandInteractionEvent event) {
